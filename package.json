@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "babel-node ./server.js",
     "dev": "DEBUG=express:* babel-node ./server.js",
-    "fixtures": "babel-node ./fixtures.js"
+    "dummy": "babel-node ./dummy.js"
   },
   "author": "Piotr Ilczuk",
   "license": "MIT",
@@ -28,6 +28,8 @@
     "express-graphql": "^0.5.3",
     "graphql": "^0.8.2",
     "lodash": "^4.17.4",
+    "lokka": "^1.7.0",
+    "lokka-transport-http": "^1.6.1",
     "mongodb": "^2.2.4",
     "mongoose": "^4.7.7"
   },

@@ -23,6 +23,8 @@ app.use('/graphql', graphqlHTTP(async () => ({
     })
 })));
 
+app.use('/', express.static('static'))
+
 let server = app.listen(3000, () => {
     console.log('Running a GraphQL API server at http://localhost:3000/graphql');
 });

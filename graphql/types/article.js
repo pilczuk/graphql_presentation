@@ -39,10 +39,7 @@ export default new GraphQLObjectType({
                     .find({
                         articleId: article._id
                     })
-                    .sort({
-                        created_at: -1
-                    })
-                    .limit(args.first || 20)
+                    .limit(args.first)
                     .then(res => res);
             }
         }
